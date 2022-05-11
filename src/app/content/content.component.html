@@ -70,3 +70,26 @@
   </div>
 
 
+  <!-- <div *ngIf= "condition">
+    <h3> Algo pasa si la condición del ngIf es true</h3>
+</div> -->
+
+
+<!-- ng clas pa cambiar color de la fuente -->
+<!-- aquí conectamo con la lógica del componente a partir de esus Directivas -->
+
+<!-- <p [ngClass]="condition?'clase1':'clase2'">Esto será rojo y azul si condition es true</p> -->
+
+<h3>Destinos próximos a abrirse:</h3>
+<ul [ngClass]="hayLista ? 'clase1' : 'clase2'">
+  <li *ngFor="let destino of otrosDestinos">
+    <!-- aqui usamos -->
+      {{destino | uppercase}} - {{price | number: '1.0-0'}}
+  </li>
+</ul>
+<h4>Diponibles a partir de: 
+  <br>
+    <!-- aqui utilizamos una pipe.  -->
+    <!-- fecha corresponde al valor de la variable en ts; lo demás es pipe -->
+     {{fecha | date: 'MMM d, y'}}
+</h4>
