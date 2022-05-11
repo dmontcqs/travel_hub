@@ -84,8 +84,9 @@
 <ul [ngClass]="hayLista ? 'clase1' : 'clase2'">
   <li *ngFor="let destino of otrosDestinos">
     <!-- aqui usamos -->
-      {{destino | uppercase}} - {{price | number: '1.0-0'}}
+      {{destino | uppercase}} <br>
   </li>
+  Precios a partir de {{ price | currency: "MXN":"symbol"}} ! 🤸‍♀️
 </ul>
 <h4>Diponibles a partir de: 
   <br>

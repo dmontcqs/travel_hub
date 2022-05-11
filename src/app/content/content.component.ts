@@ -20,7 +20,7 @@ export class ContentComponent implements OnInit {
   condition: boolean = true; 
   hayLista: boolean = true; 
   fecha:string = '10/09/2022';
-  price: number = 80.45; 
+  price = 2499.99; 
   
 }
 
