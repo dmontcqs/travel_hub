@@ -65,21 +65,63 @@
         <a href="#" class="btn btn-primary">Más información</a>
       </div>
     </div>
+
+
+
+    <!-- cuarta card -->
+<!-- 
+    <div class="card">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1608079488053-7e496b8abf69?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW9yZWxvc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Puerto Vallarta- Jalisco</h5>
+        <p class="card-text">
+         Conoce todos los atractivos de este bello litoral del mar pacífico mexicano.
+         <br>
+         Precios desde $200 USD
+        </p>
+        <a href="#" class="btn btn-primary">Más información</a>
+      </div>
+    </div> -->
+
+
+    <!-- quinta card -->
+
+    <!-- <div class="card">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1575351881847-b3bf188d9d0a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Puerto Vallarta- Jalisco</h5>
+        <p class="card-text">
+         Conoce todos los atractivos de este bello litoral del mar pacífico mexicano.
+         <br>
+         Precios desde $200 USD
+        </p>
+        <a href="#" class="btn btn-primary">Más información</a>
+      </div>
+    </div> -->
+
+    <!-- secta card -->
+
+    <!-- <div class="card">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1591313995633-7c2fbda937f9?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Puerto Vallarta- Jalisco</h5>
+        <p class="card-text">
+         Conoce todos los atractivos de este bello litoral del mar pacífico mexicano.
+         <br>
+         Precios desde $200 USD
+        </p>
+        <a href="#" class="btn btn-primary">Más información</a>
+      </div>
+    </div>
+
+ -->
+
+
     
     </div>
   </div>
 
-
-  <!-- <div *ngIf= "condition">
-    <h3> Algo pasa si la condición del ngIf es true</h3>
-</div> -->
-
-
-<!-- ng clas pa cambiar color de la fuente -->
-<!-- aquí conectamo con la lógica del componente a partir de esus Directivas -->
-
-<!-- <p [ngClass]="condition?'clase1':'clase2'">Esto será rojo y azul si condition es true</p> -->
-
+<div class="m-3">
 <h3>Destinos próximos a abrirse:</h3>
 <ul [ngClass]="hayLista ? 'clase1' : 'clase2'">
   <li *ngFor="let destino of otrosDestinos">
@@ -87,10 +129,12 @@
       {{destino | uppercase}} <br>
   </li>
   Precios a partir de {{ price | currency: "MXN":"symbol"}} ! 🤸‍♀️
-</ul>
-<h4>Diponibles a partir de: 
-  <br>
+  <p>Diponibles a partir de: 
     <!-- aqui utilizamos una pipe.  -->
     <!-- fecha corresponde al valor de la variable en ts; lo demás es pipe -->
      {{fecha | date: 'MMM d, y'}}
-</h4>
+  </p>
+</ul>
+</div>
+
+

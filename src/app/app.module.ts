@@ -6,6 +6,9 @@ import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { ContentComponent } from './content/content.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormularioComponent } from './formulario/formulario.component';
+// importamos la clase para hacer fomularios. 
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,10 +18,12 @@ import { FooterComponent } from './footer/footer.component';
     ContentComponent,
     HeaderComponent,
     FooterComponent,
+    FormularioComponent
     
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

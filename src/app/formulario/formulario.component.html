@@ -1,0 +1,77 @@
+<h3 class="m-3">Contáctanos</h3>
+
+<form [formGroup]="formularioContacto" (ngSubmit)="submit()" class="form-group m-3">
+
+    <p>Nombre:
+      <input type="text" formControlName="nombre" required class="form-control" >
+      <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
+        (El nombre no puede quedar vacío)
+      </span>
+      <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['minlength']">
+        (Debe tener como mínimo 10 caracteres)
+      </span>
+    </p>
+
+
+    <p>Mail:
+        <input type="text" formControlName="mail" class="form-control form-control-sm">
+        <span *ngIf="this.formularioContacto.get('mail')?.errors?.['required']">
+          (El mail no puede quedar vacío)
+        </span>
+        <span *ngIf="this.formularioContacto.get('mail')?.errors?.['email']">
+          (El mail no es válido)
+        </span>
+      </p>
+
+    <p>Mensaje<br>
+      <textarea rows="10" cols="70" formControlName="mensaje" class="form-control"></textarea>
+    </p>
+
+    <!-- validación 1 -->
+    <div *ngIf="this.formularioContacto.get('mensaje')?.errors?.['required']">
+      (El mensaje no puede quedar vacío)
+    </div>
+    <!-- validación 2 -->
+    <div *ngIf="this.formularioContacto.get('mensaje')?.errors?.['maxlength']">
+      (Debe tener como máximo 300 caracteres)
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Confirmar</button>
+  </form>
+
+
+  <div>{{resultado}}</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <form [formGroup]="miFormulario" (ngSubmit)="submit()" class="m-3 col-lg-6">
+
+<div class="form-group">
+    <label>Email</label> 
+    <input type="email"  id="email" formControlName="nombre"  class= "form-control"/>
+</div>
+
+<div class="form-group">
+    <label>País:</label> 
+    <input type="text"  id="pais" formControlName="pais"  class= "form-control"/>
+</div>
+
+
+<div class="form-group">
+    <label>Viaje:</label> 
+    <input type="text"  id="viaje" formControlName="viaje"  class= "form-control"/>
+</div>
+
+<br>
+
+<button type="submit" class="btn-primary">Enviar</button>
+</form> 
+
+  -->
