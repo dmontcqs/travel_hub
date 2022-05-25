@@ -5,6 +5,7 @@ import { Validators, FormBuilder} from '@angular/forms';
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.scss']
+
 })
 export class FormularioComponent {
 
@@ -29,4 +30,5 @@ export class FormularioComponent {
     }
   
 }
+
 

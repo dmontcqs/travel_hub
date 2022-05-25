@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
@@ -9,7 +9,14 @@ import { FooterComponent } from './footer/footer.component';
 import { FormularioComponent } from './formulario/formulario.component';
 // importamos la clase para hacer fomularios. 
 import { ReactiveFormsModule } from '@angular/forms';
+// imprta cosas de angular material
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// importamos nuestra CLASE que contiene con componentes de angular Material. 
+import{ MaterialModule} from './material.module'
+
+
+ 
 
 @NgModule({
   declarations: [
@@ -18,14 +25,23 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContentComponent,
     HeaderComponent,
     FooterComponent,
-    FormularioComponent
+    FormularioComponent,    
     
+  
+   
+     
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    // este es el que contiene los componentes de angular material 
+    MaterialModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
