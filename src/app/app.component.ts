@@ -16,6 +16,8 @@ export class AppComponent {
   url = 'https://http2.mlstatic.com/D_NQ_NP_656903-MLM32337366844_092019-O.webp'
 
   vector = [1,2,3,4,5,6,7];
+  showFiller = false;
+
 
   }
 

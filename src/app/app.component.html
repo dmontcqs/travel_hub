@@ -1,20 +1,29 @@
-<!-- PARA generar una visya a través de componentes -->
+<!-- PARA generar una vista a través de componentes usamos sus selectores -->
 
 <app-header></app-header>
 
+
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <!-- este es el sidebar de Boostrap -->
+    <app-left-menu></app-left-menu>
+    
+  </mat-drawer>
+  <mat-drawer-content>
+
+    <app-content></app-content>
+    <app-formulario></app-formulario>
+
+</mat-drawer-content>
+</mat-drawer-container>
+
 <!-- este selector debería renderear componente de angular material -->
 
-<app-side-nav></app-side-nav>
 
-<div class="d-flex">
-  
-  <app-left-menu></app-left-menu>
-  <app-content></app-content>
 
-</div>
 
-<app-formulario></app-formulario>
 
 <app-footer><app-footer>
+
 
  

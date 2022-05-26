@@ -13,33 +13,35 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // importamos nuestra CLASE que contiene con componentes de angular Material. 
-import{ MaterialModule} from './material.module'
+//import{ MaterialModule} from './material.module'
 
-
+import {MatSidenavModule} from '@angular/material/sidenav'
  
 
 @NgModule({
+  // esto es los componentes creados localmente. 
   declarations: [
     AppComponent,
     LeftMenuComponent,
     ContentComponent,
     HeaderComponent,
     FooterComponent,
-    FormularioComponent,    
+    FormularioComponent,
+    
     
   
    
      
   ],
   imports: [
+    // estos son los componentes creados externamente.
     BrowserModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    // este es el que contiene los componentes de angular material 
-    MaterialModule
-    
+    MatSidenavModule
     
   ],
+  // aqui van los servicios que puedo inventarme 
   providers: [],
   bootstrap: [AppComponent]
 })
